@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import java.util.Random;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     int i=0;
     EditText edMin,edMax;
@@ -19,17 +21,16 @@ public class MainActivity extends AppCompatActivity {
         textView= findViewById(R.id.MeuTXT);
         edMin=findViewById(R.id.edtextMin);
         edMax=findViewById(R.id.edtextMax);
-        TextViewResult= findViewById(R.id.textView);
+        TextViewResult= findViewById(R.id.textView2);
 
     }
     public void NumeroAleatorio(View V)
     {
         int max,min;
-        min=Integer.parseInt(edMin.getText().toString());
-        max=Integer.parseInt(edMax.getText().toString());
+        min=integer.ParseInt(edMin.getText().toString());
+        max=integer.ParseInt(edMax.getText().toString());
         Random R= new Random();
-        int result=(R.nextInt(max-min+1)+min);
-        TextViewResult.setText(Integer.toString(result));
+        R.nextInt(max-min+1);
     }
     public void contar(View V){
         i=i+1;
